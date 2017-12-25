@@ -9,4 +9,5 @@ function defultPerson(id, name, age) {
         res.write(this.name + " 在教室里面<br/>");
     }
 }
+
 module.exports = defultPerson; // 外部唯一调用defultPerson函数（或class）

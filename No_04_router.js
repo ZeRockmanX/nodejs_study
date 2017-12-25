@@ -17,7 +17,7 @@ var url = require('url');
 var router = require('./models/No_04_router');
 
 http.createServer(function (request, response) {
-    response.writeHead(200, { 'Content-Type': 'text/html;charset=utf-8' });
+    response.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'});
     if (request.url != '/favicon.ico') {
         var pathName = url.parse(request.url).pathname;//url对象的pares解析url地址中的path路径名（含'/'...）
         pathName = pathName.replace(/\//, "");//正则去掉url的根”/“

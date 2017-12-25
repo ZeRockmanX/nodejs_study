@@ -1,4 +1,5 @@
 var Person = require('./No_03_fun_defult');
+
 function Student(id, name, age) {
     // apply 继承父类
     Person.apply(this, [id, name, age]);
@@ -11,4 +12,5 @@ function Student(id, name, age) {
         res.write(this.type + ' ' + this.name + " 在上课<br/>");
     }
 }
+
 module.exports = Student; // 外部调用

@@ -17,7 +17,7 @@ var Students = require('./models/No_03_fun_students');
 var Teachers = require('./models/No_03_fun_teachers');
 
 http.createServer(function (request, response) {
-    response.writeHead(200, { 'Content-Type': 'text/html;charset=utf-8' });
+    response.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'});
     if (request.url != '/favicon.ico') {
         // 实例化Person类
         def = new Person("编号", "许多人", "年纪");
